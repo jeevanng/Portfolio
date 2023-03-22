@@ -5,6 +5,11 @@ $third-color: #DDA15E;
 $fourth-color: #BC6C25;
 $mobile: 600px;
 
+@mixin inner-triangle-dimensions{
+    width: 100%;
+    height: 100%;
+}
+
 // Add a beige/sand background color to the body
 body{
     margin: 0;
@@ -35,7 +40,7 @@ footer{
         margin-bottom: 20px;
         margin-top: 10px;
         // Change size of icons
-        font-size: 18px;
+        font-size: 20px;
     }
 
     // Reduce space between paragraphs
@@ -59,8 +64,85 @@ footer{
 }
 
 
+.mountain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    img{
+        object-fit: cover;
+        max-height: 100%;
+        width: 100%;
+    }
+    
+    .triangle {
+        width: 15%;
+        height: 100px;
+        background-color: black;
+        clip-path: polygon(52% 1%, 0% 96%, 10% 95%, 16% 96%, 26% 93%, 30% 96%, 40% 92%, 46% 97%, 53% 92%, 59% 95%, 69% 89%, 74% 95%, 80% 94%, 85% 96%, 91% 93%, 99% 95%);
+
+        .inner_triangle{
+            @include inner-triangle-dimensions();
+            background-color: $base-color;
+            clip-path: polygon(52% 11%, 6% 93%, 15% 85%, 16% 92%, 27% 78%, 31% 89%, 42% 67%, 46% 89%, 50% 76%, 59% 92%, 69% 77%, 75% 90%, 81% 87%, 84% 91%, 84% 80%, 94% 92%);
+        }
+    }  
+    .triangle2 {
+        width: 30%;
+        height: 100px;
+        background-color: black;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
+
+        // Fixes image not fitting height of div container when width is made smaller
+        .mountain_image2{
+            height: 100%;
+        }
+
+        .inner_triangle2{
+            @include inner-triangle-dimensions();
+            clip-path: polygon(26% 4%, 74% 4%, 97% 91%, 2.5% 91%);
+        }  
+    }
+    .triangle3 {
+        width: 45%;
+        height: 100px;
+        background-color: black;
+        clip-path: polygon(16% 0%, 84% 0%, 100% 95%, 0% 95%);
+
+        .inner_triangle3 {
+            @include inner-triangle-dimensions();
+            clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
+        }
+    }  
+    .triangle4 {
+        width: 60%;
+        height: 100px;
+        background-color: black;
+        clip-path: polygon(12% 0%, 88% 0%, 100% 95%, 0% 95%);
+
+        .inner_triangle4{
+            @include inner-triangle-dimensions();
+            clip-path: polygon(12.7% 5%, 88% 6%, 98% 90%, 1.7% 91%);
+        }
+    }  
+    .triangle5 {
+        width: 75%;
+        height: 100px;
+        background-color: black;
+        clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 95%, 0% 95%);
+
+        .inner_triangle5{
+            @include inner-triangle-dimensions();
+            clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
+        }
+    }  
+}
+
 .topnav{
     overflow: hidden;
+    margin-bottom: 24px;
 
     // Style the hyperlinks inside the navigation bar 
     a{
@@ -80,7 +162,7 @@ footer{
     }
 
     // Add an active class to highlight the current page
-    a:active{
+    a.active{
         background-color: $fourth-color;
         color: $base-color;
     }
@@ -100,8 +182,7 @@ footer{
     .topnav{
       
         a{
-
-            &:not(:first-child){
+            &:not(.active){
                 display: none;
             }
         }
@@ -147,7 +228,7 @@ footer{
     }
 }
 
-// Center social media icons on footer when above 600px wide
+// Center social media icons footer when above 600px wide
 @media screen and (min-width: $mobile){
     footer{
 
@@ -156,5 +237,11 @@ footer{
             margin-left: auto;
             margin-right: auto;
         }
+    }
+
+    // When width is above 600px, move the links to the right exluding "Jeevan Ng" (Home Page)
+    .fourlinks{
+        display: flex;
+        justify-content: flex-end;
     }
 }

@@ -21,7 +21,7 @@ footer .social-media {
   justify-content: space-around;
   margin-bottom: 20px;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 footer p {
   margin: 5px 0px;
@@ -36,8 +36,92 @@ footer i {
   color: black;
 }
 
+.mountain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.mountain img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+}
+.mountain .triangle {
+  width: 15%;
+  height: 100px;
+  background-color: black;
+  -webkit-clip-path: polygon(52% 1%, 0% 96%, 10% 95%, 16% 96%, 26% 93%, 30% 96%, 40% 92%, 46% 97%, 53% 92%, 59% 95%, 69% 89%, 74% 95%, 80% 94%, 85% 96%, 91% 93%, 99% 95%);
+          clip-path: polygon(52% 1%, 0% 96%, 10% 95%, 16% 96%, 26% 93%, 30% 96%, 40% 92%, 46% 97%, 53% 92%, 59% 95%, 69% 89%, 74% 95%, 80% 94%, 85% 96%, 91% 93%, 99% 95%);
+}
+.mountain .triangle .inner_triangle {
+  width: 100%;
+  height: 100%;
+  background-color: #FEFAE0;
+  -webkit-clip-path: polygon(52% 11%, 6% 93%, 15% 85%, 16% 92%, 27% 78%, 31% 89%, 42% 67%, 46% 89%, 50% 76%, 59% 92%, 69% 77%, 75% 90%, 81% 87%, 84% 91%, 84% 80%, 94% 92%);
+          clip-path: polygon(52% 11%, 6% 93%, 15% 85%, 16% 92%, 27% 78%, 31% 89%, 42% 67%, 46% 89%, 50% 76%, 59% 92%, 69% 77%, 75% 90%, 81% 87%, 84% 91%, 84% 80%, 94% 92%);
+}
+.mountain .triangle2 {
+  width: 30%;
+  height: 100px;
+  background-color: black;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
+}
+.mountain .triangle2 .mountain_image2 {
+  height: 100%;
+}
+.mountain .triangle2 .inner_triangle2 {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(26% 4%, 74% 4%, 97% 91%, 2.5% 91%);
+          clip-path: polygon(26% 4%, 74% 4%, 97% 91%, 2.5% 91%);
+}
+.mountain .triangle3 {
+  width: 45%;
+  height: 100px;
+  background-color: black;
+  -webkit-clip-path: polygon(16% 0%, 84% 0%, 100% 95%, 0% 95%);
+          clip-path: polygon(16% 0%, 84% 0%, 100% 95%, 0% 95%);
+}
+.mountain .triangle3 .inner_triangle3 {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
+          clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
+}
+.mountain .triangle4 {
+  width: 60%;
+  height: 100px;
+  background-color: black;
+  -webkit-clip-path: polygon(12% 0%, 88% 0%, 100% 95%, 0% 95%);
+          clip-path: polygon(12% 0%, 88% 0%, 100% 95%, 0% 95%);
+}
+.mountain .triangle4 .inner_triangle4 {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(12.7% 5%, 88% 6%, 98% 90%, 1.7% 91%);
+          clip-path: polygon(12.7% 5%, 88% 6%, 98% 90%, 1.7% 91%);
+}
+.mountain .triangle5 {
+  width: 75%;
+  height: 100px;
+  background-color: black;
+  -webkit-clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 95%, 0% 95%);
+          clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 95%, 0% 95%);
+}
+.mountain .triangle5 .inner_triangle5 {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
+          clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
+}
+
 .topnav {
   overflow: hidden;
+  margin-bottom: 24px;
 }
 .topnav a {
   float: left;
@@ -52,7 +136,7 @@ footer i {
   background-color: #606C38;
   color: #FEFAE0;
 }
-.topnav a:active {
+.topnav a.active {
   background-color: #BC6C25;
   color: #FEFAE0;
 }
@@ -61,7 +145,7 @@ footer i {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  .topnav a:not(.active) {
     display: none;
   }
   .topnav a.icon {
@@ -95,5 +179,9 @@ footer i {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .fourlinks {
+    display: flex;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=index.css.map */

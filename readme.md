@@ -60,6 +60,36 @@ Home page now displays a short little introduction about me. Here is the text we
 <p>I enjoy giving the "abstract" meaningful connection and emotions.</p>
 ```
 
+Added the main body of the home page, a cascading triangle shaped mountain with an image in each container. Each photo is a link to another part of the page as well. Code below;
+
+```html
+<div class="mountain">
+    <div class="triangle">
+        <div class="inner_triangle"></div>
+    </div>
+    <a class="triangle2" href="./pages/about.html">
+        <div class="inner_triangle2">
+            <img src="./images/6.jpg" class="mountain_image2">
+        </div>
+    </a>
+    <a class="triangle3" href="./pages/work.html">
+        <div class="inner_triangle3">
+            <img src="./images/6.jpg">
+        </div>
+    </a>
+    <a class="triangle4" href="./pages/blog.html">
+        <div class="inner_triangle4">
+            <img src="./images/6.jpg">
+        </div>
+    </a>
+    <a class="triangle5" href="./pages/contact.html">
+        <div class="inner_triangle5">
+            <img src="./images/6.jpg">
+        </div>
+    </a>
+</div>
+```
+
 # Styling 
 
 # Javascript
