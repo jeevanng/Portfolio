@@ -10,12 +10,57 @@ body{
     margin: 0;
     background-color: $base-color;
     font-family: Arial, Helvetica, sans-serif;
+
+    // Aligns children in column axis, and displays the footer on the bottom
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 // Add a beige/sand background color to the topnav
+header{
+    background-color: $base-color;
+}
+
+// Add a beige/sand background color to the footer
+footer{
+    background-color: $base-color;
+    text-align: center;
+
+    // Space the social media icons and give margin from bottom screen
+    .social-media{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        // Change size of icons
+        font-size: 18px;
+    }
+
+    // Reduce space between paragraphs
+    p{
+        margin: 5px 0px;
+    }
+
+    // Change color of text in footer
+    .copyright{
+        color: $fourth-color
+    }
+
+    .info2{
+        color: $third-color
+    }
+
+    // Change color of icons
+    i{
+        color: black;
+    }
+}
+
+
 .topnav{
     overflow: hidden;
-    background-color: $base-color;
 
     // Style the hyperlinks inside the navigation bar 
     a{
@@ -45,6 +90,8 @@ body{
         display: none;
     }
 }
+
+
 
 // When the screen is less than 600 pixels wide, hide all links, except for the 
 // first one ("Jeevan Ng"). Show the link that contains should open and close 
@@ -81,6 +128,33 @@ body{
             float: none;
             display: block;
             text-align: left;
+        }
+
+        // Center all links except home ("Jeevan Ng") in hamburger drop down button
+        .otherLinks{
+            text-align: center;
+        }
+    }
+
+    // Center social media icons when below 600px
+    footer{
+
+        .social-media{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// Center social media icons on footer when above 600px wide
+@media screen and (min-width: $mobile){
+    footer{
+
+        .social-media{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

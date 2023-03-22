@@ -23,8 +23,42 @@ Header has "Name" of the portfolio along with navigation bar. Here is the code w
     </nav>
 </header>
 ```
+## Footer
+Added footer which contains some text and logo's. The logos are links that will open a new tab to the site directed by html. 
 
+```html
+<footer>
+    <div class="info">
+        <p class="copyright">Copyright @ 2023 Jeevan Ng. All rights reserved.</p>
+        <p class="info2">Get in touch</p>
+    </div>
+    <!-- Links open new tab to have user stay on Portfolio page -->
+    <div class="social-media">
+        <a href="https://www.github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </div>
+</footer>
+```
 # Pages
+
+## Home
+Home page now displays a short little introduction about me. Here is the text we have used;
+```html
+<p> Hello! I'm Jeevan, a web developer, an innovator, a minimalist and a dreamer who is 
+    passionate about bridging the gap between reality and technology.
+</p>
+<p>I enjoy giving the "abstract" meaningful connection and emotions.</p>
+```
 
 # Styling 
 
