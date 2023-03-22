@@ -1,0 +1,65 @@
+@import "../defaults/color";
+@import "../defaults/breakpoints";
+
+// Add a beige/sand background color to the footer
+footer{
+    background-color: $base-color;
+    text-align: center;
+
+    // Space the social media icons and give margin from bottom screen
+    .social-media{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        // Change size of icons
+        font-size: 20px;
+    }
+
+    // Reduce space between paragraphs
+    p{
+        margin: 5px 0px;
+    }
+
+    // Change color of text in footer
+    .copyright{
+        color: $fourth-color
+    }
+
+    .info2{
+        color: $third-color
+    }
+
+    // Change color of icons
+    i{
+        color: black;
+    }
+}
+
+// When the screen is less than 600 pixels wide, hide all links, except for the 
+// first one ("Jeevan Ng"). Show the link that contains should open and close 
+// the topnav (.icon)
+@media screen and (max-width: $mobile){
+    
+    // Center social media icons when below 600px
+    footer{
+
+        .social-media{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// Center social media icons footer when above 600px wide
+@media screen and (min-width: $mobile){
+    footer{
+
+        .social-media{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
