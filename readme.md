@@ -92,6 +92,14 @@ Added the main body of the home page, a cascading triangle shaped mountain with 
 
 # Styling 
 
+## Components
+This will contain the styling of individual components which are as following at the moment; 
+- Header 
+- Footer
+
+## Defaults
+This will contain the default variables such as colors, breakpoints etc. 
+
 # Javascript
 The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally)
 

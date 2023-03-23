@@ -5,6 +5,9 @@
 footer{
     background-color: $base-color;
     text-align: center;
+    font-family: 'Secular One', sans-serif;
+    // Change font size of footer text
+    font-size: 0.85rem;
 
     // Space the social media icons and give margin from bottom screen
     .social-media{
@@ -13,7 +16,7 @@ footer{
         margin-bottom: 20px;
         margin-top: 10px;
         // Change size of icons
-        font-size: 20px;
+        font-size: 22px;
     }
 
     // Reduce space between paragraphs

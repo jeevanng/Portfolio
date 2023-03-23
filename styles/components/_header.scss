@@ -1,9 +1,26 @@
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
+$primaryfontsize: 24px;
+$secondaryfontsize: 18px;
+
 // Add a beige/sand background color to the topnav
 header{
     background-color: $base-color;
+    font-family: 'Secular One', sans-serif;
+
+    .topnav{
+        
+        // Change font size of name "Jeevan Ng"
+        .active{
+            font-size: $primaryfontsize;
+        }
+
+        // Change font size of other links 
+        .fourlinks{
+            font-size: $secondaryfontsize;
+        }
+    }
 }
 
 .topnav{
@@ -18,7 +35,8 @@ header{
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 18px;
+        // Change font size of nav bar text
+        // font-size: 24px;
         
         // Style the hyperlinks on hover
         &:hover{
@@ -28,7 +46,7 @@ header{
     }
 
     // Add an active class to highlight the current page
-    a.active{
+    a.active:not(.active){
         background-color: $fourth-color;
         color: $base-color;
     }
@@ -36,6 +54,8 @@ header{
     // Hide the link that should open and close the topnav on small screens
     .icon{
         display: none;
+        // Change size of hamburger icon
+        font-size: $primaryfontsize;
     }
 }
 

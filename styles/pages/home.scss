@@ -16,7 +16,8 @@
 
     img{
         object-fit: cover;
-        max-height: 100%;
+        // Ensures image fills container fully when minimizing screen width
+        height: 100%;
         width: 100%;
     }
     
@@ -39,11 +40,6 @@
         height: 100px;
         background-color: black;
         clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
-
-        // Fixes image not fitting height of div container when width is made smaller
-        .mountain_image2{
-            height: 100%;
-        }
 
         .inner_triangle2{
             @include inner-triangle-dimensions();
@@ -83,4 +79,21 @@
             clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
         }
     }  
+}
+
+// Change the text and attributes in the home page 
+.hometext{
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+
+    .highlight{
+        font-style: italic;
+        color: $secondary-color;
+    }
+
+    p{
+        color: $primary-color;
+    }
 }
