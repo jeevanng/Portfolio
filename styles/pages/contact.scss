@@ -1,0 +1,90 @@
+@import "../defaults/color";
+@import "../defaults/breakpoints";
+
+// Align children so that they are aligned in the column direction
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        color: $primary-color;
+    }
+
+    form{
+
+        // Align so that the input appears below label
+        .form-elements{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+            gap: 5px;
+
+            label{
+                font-size: 1.2rem;
+            }
+
+            // Change properties of input
+            .form-input{
+                border: 1px solid black;
+                border-radius: 4px;
+                outline: none;
+                font-size: 1.2rem;
+                // Change font for input field
+                font-family: 'Secular One', sans-serif;
+                
+                &:not(.form-textarea){
+                    height: 28px;
+                }
+
+                .form-textarea{
+                    resize: none;
+                }
+
+                &:focus{
+                    box-shadow: 8px 12px 20px -1px $fourth-color;
+                }
+            }
+        }
+
+        .btn-div{
+            text-align: center;
+
+            #submit{
+                font-size: 1rem;
+                min-height: 40px;
+                min-width: 100px;
+                background-color: $secondary-color;
+                color: $base-color;
+                border: 1 solid $primary-color;
+                outline: none;
+
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+// Change the input to appear in a row when width is larger than 600pixels
+@media screen and (min-width: $mobile){
+    main{
+
+        form{
+
+            .form-elements{
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 10px;
+
+                // Change width of input field when screen is wider than 600px
+                .form-input{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+

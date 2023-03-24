@@ -196,7 +196,39 @@ Added the blog page to contain five blog posts. Each with title and image. The c
         </section>
     </article>
 ```
+## Contact
+Added a contact page with form and input fields. Allows the user to enter information to send a message. Code below;
 
+```html
+<main>
+    <h2>CONTACT US</h2>
+    <form>
+        <div class="form-elements">
+            <label>Name:</label>
+            <input class="form-input">
+        </div>
+
+        <div class="form-elements">
+            <label>Email:</label>
+            <input class="form-input">
+        </div>
+
+        <div class="form-elements">
+            <label>Subject:</label>
+            <input class="form-input">
+        </div>
+
+        <div class="form-elements">
+            <label>Message:</label>
+            <textarea rows="5" class="form-input form-textarea"></textarea>
+        </div>
+
+        <div class="btn-div">
+            <button id="submit">SEND</button>
+        </div>
+    </form>
+</main>
+```
 
 # Styling 
 
