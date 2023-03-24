@@ -180,6 +180,23 @@ Added the layout for the page. Contains text and then two sample work images bel
     </article>  
 </main>
 ```
+## Blog
+
+Added the blog page to contain five blog posts. Each with title and image. The code is below, repeated 5 times;
+
+```html
+    <article>
+        <section>
+            <a href="">
+                <div class="blogtitle">
+                    Blog Post 1 
+                </div>
+                <img src="../images/6.jpg" alt="blog post 1"></img>
+            </a>
+        </section>
+    </article>
+```
+
 
 # Styling 
 

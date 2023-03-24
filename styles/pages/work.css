@@ -13,7 +13,7 @@ main article section .workphotos {
 }
 main article section .workphotos img {
   width: 300px;
-  border-radius: 10%;
+  border-radius: 5%;
   border: 3px solid #606C38;
   -o-object-fit: cover;
      object-fit: cover;
