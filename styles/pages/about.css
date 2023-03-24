@@ -1,0 +1,16 @@
+main article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article section img {
+  max-width: 75%;
+  border-radius: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #606C38;
+}
+
+.abouttext {
+  margin: 15px;
+}/*# sourceMappingURL=about.css.map */

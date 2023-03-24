@@ -5,7 +5,6 @@
 
 // Add a beige/sand background color to the body
 body{
-    margin: 0;
     background-color: $base-color;
 
     // Aligns children in column axis, and displays the footer on the bottom
@@ -14,9 +13,9 @@ body{
     justify-content: space-between;
     min-height: 100vh;
 
-    // Change font of text in home page
-    p{
-        font-family: 'Secular One', sans-serif;   
+    // Change font of text of all paragraphs
+    .hometext{
+        font-family: 'Bebas Neue', cursive;  
     }
 }
 

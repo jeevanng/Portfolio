@@ -1,0 +1,20 @@
+main article .resume {
+  display: flex;
+  justify-content: center;
+}
+main article section {
+  margin: 15px;
+}
+main article section .workphotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+main article section .workphotos img {
+  width: 300px;
+  border-radius: 10%;
+  border: 3px solid #606C38;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=work.css.map */

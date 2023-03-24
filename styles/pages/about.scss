@@ -1,0 +1,26 @@
+@import "../defaults/color";
+@import "../defaults/breakpoints";
+
+main{
+
+    article{
+
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                max-width: 75%;
+                border-radius: 10%;
+                object-fit: cover;   
+                border: 3px solid $secondary-color;
+            }
+        }
+    }
+}
+    
+// Give margin to text in About page 
+.abouttext{
+    margin: 15px;
+}

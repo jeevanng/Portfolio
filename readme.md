@@ -90,6 +90,97 @@ Added the main body of the home page, a cascading triangle shaped mountain with 
 </div>
 ```
 
+## About
+
+Added a photo container and the main text. Here is the code we used;
+
+```html
+<main>
+    <article>
+        <section>
+            <img src="../images/6.jpg" alt="Photo of Jeevan"></img>
+        </section>
+        <section>
+            <div class="abouttext">
+                <p>
+                I am a coder from Australia, Melbourne. Previously, I attained a Bachelors in Psychology at Monash University. 
+                However, I come from a more practical background being an ex-firefighter and jeweller. With a minimalist 
+                approach, I strive to weave stories and creativity into technology with the user being at the centre. 
+                I love solving complex problems and integrating that into understandable solutions. 
+                </p>
+            </div>
+        </section>
+    </article>  
+    <article>
+
+    </article>
+        <section>
+            <div class="abouttext">
+                 <p>
+                    When I'm not coding, you will find me dabbling in
+                    <ul>
+                        <li>Climbing</li>
+                        <li>Hiking</li>
+                        <li>Camping</li>
+                        <li>Mountain Bike Riding</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+    </article>
+</main>
+```
+
+## Work
+
+Added the layout for the page. Contains text and then two sample work images below. Here is the code used;
+
+```html
+<main>
+    <article>
+        <section>
+            <p>
+            My main expertise lies in Web Development, particularly;
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-html5"></i>
+                        HTML
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        CSS
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-square-js"></i>
+                        Javascript
+                    </li>
+                </ul>
+            </p>
+            <p>
+            However, I do dabble in UX/UI design, illustration and market research. 
+            </p>
+            <p>
+            If you like my site, don't hesitate to reach out!
+            </p>
+        </section>
+        
+        <!-- Add a button for a link to my resume -->
+        <section class="resume">
+            <a href="../documents/resume.pdf" target="_blank">
+                <button type="button">Resume</button>
+            </a>
+        </section>
+
+        <section>
+            <div class="workphotos">
+                <img src="../images/6.jpg" alt="project1"></img>
+                <img src="../images/6.jpg" alt="project1"></img>
+            </div>
+        </section>
+    </article>  
+</main>
+```
+
 # Styling 
 
 ## Components

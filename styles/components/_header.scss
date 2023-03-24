@@ -45,12 +45,6 @@ header{
         }
     }
 
-    // Add an active class to highlight the current page
-    a.active:not(.active){
-        background-color: $fourth-color;
-        color: $base-color;
-    }
-
     // Hide the link that should open and close the topnav on small screens
     .icon{
         display: none;
