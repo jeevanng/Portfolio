@@ -12,6 +12,9 @@ main form .form-elements {
   margin-bottom: 24px;
   gap: 5px;
 }
+main form .form-elements .form-textarea {
+  resize: none;
+}
 main form .form-elements label {
   font-size: 1.2rem;
 }
@@ -24,9 +27,6 @@ main form .form-elements .form-input {
 }
 main form .form-elements .form-input:not(.form-textarea) {
   height: 28px;
-}
-main form .form-elements .form-input .form-textarea {
-  resize: none;
 }
 main form .form-elements .form-input:focus {
   box-shadow: 8px 12px 20px -1px #BC6C25;
@@ -48,7 +48,7 @@ main form .btn-div #submit:hover {
   opacity: 0.8;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   main form .form-elements {
     flex-direction: row;
     justify-content: space-between;

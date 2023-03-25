@@ -20,6 +20,10 @@ main{
             margin-bottom: 24px;
             gap: 5px;
 
+            .form-textarea{
+                resize: none;
+            }
+
             label{
                 font-size: 1.2rem;
             }
@@ -35,10 +39,6 @@ main{
                 
                 &:not(.form-textarea){
                     height: 28px;
-                }
-
-                .form-textarea{
-                    resize: none;
                 }
 
                 &:focus{
@@ -68,7 +68,7 @@ main{
     }
 }
 
-// Change the input to appear in a row when width is larger than 600pixels
+// Change the input to appear in a row when width is larger than 480 pixels
 @media screen and (min-width: $mobile){
     main{
 

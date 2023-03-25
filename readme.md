@@ -201,7 +201,7 @@ Added a contact page with form and input fields. Allows the user to enter inform
 
 ```html
 <main>
-    <h2>CONTACT US</h2>
+    <h2>CONTACT</h2>
     <form>
         <div class="form-elements">
             <label>Name:</label>

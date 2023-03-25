@@ -8,6 +8,8 @@ footer{
     font-family: 'Secular One', sans-serif;
     // Change font size of footer text
     font-size: 0.85rem;
+    // Add padding to footer to give space from other elements
+    padding-top: 10px;
 
     // Space the social media icons and give margin from bottom screen
     .social-media{
@@ -39,12 +41,12 @@ footer{
     }
 }
 
-// When the screen is less than 600 pixels wide, hide all links, except for the 
+// When the screen is less than 768 pixels wide, hide all links, except for the 
 // first one ("Jeevan Ng"). Show the link that contains should open and close 
 // the topnav (.icon)
-@media screen and (max-width: $mobile){
+@media screen and (max-width: $tablet){
     
-    // Center social media icons when below 600px
+    // Center social media icons when below 480px
     footer{
 
         .social-media{
@@ -55,7 +57,7 @@ footer{
     }
 }
 
-// Center social media icons footer when above 600px wide
+// Center social media icons and space them under text of footer when above 480px wide
 @media screen and (min-width: $mobile){
     footer{
 

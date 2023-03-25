@@ -5,10 +5,10 @@ main{
 
     article{
 
-        .resume{
-            display: flex;
-            justify-content: center;
-        }
+            .resume{
+                display: flex;
+                justify-content: center;
+            }
 
         section{
             margin: 15px;
@@ -18,16 +18,43 @@ main{
                 flex-wrap: wrap;
                 justify-content: space-around;
                 gap: 15px;
-
-            img{
-                width: 300px;
-                border-radius: 5%;
-                border: 3px solid $secondary-color;
-                object-fit: cover;
                 
+                img{
+                    width: 85%;
+                    // border-radius: 5%;
+                    border: 3px solid $secondary-color;
+                    object-fit: cover;
                 }
             }   
         }
     }
 }
 
+@media screen and (min-width: $mobile){
+    main{
+
+        article{
+
+                // Resume button to move back to the left when screen is wider than 600px
+            .resume{
+                justify-content: flex-start;
+                }
+
+            section{
+
+                // Align images to be next to each other with equal space around
+                .workphotos{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px;
+                    
+                    // Resize image width to percentage to be responsive on all devices
+                    img{
+                        width: 40%;
+                    }
+                }
+
+            }
+        }
+    }
+}

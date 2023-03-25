@@ -7,20 +7,45 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
 
+    // Percentage allow the article to be responsive to all screen widths
+    // whilst maintaining the ratio of screen space the article
+    // takes
     article{
+        width: 85%;
 
         section{
 
             a{
 
                 img{
-                    width: 300px;
+                    width: 100%;
                     object-fit: cover;
                     border: 3px solid black;
-                    border-radius: 5%;
+                    // border-radius: 5%;
                 }
             }
         }
 
+    }
+}
+
+// When the screen is wider than 480px, make the blog images appear in a wrap format, side by side.
+@media screen and (min-width: $mobile){
+    main{
+
+        // Make the article take 40% of the screen
+        article{
+            width: 40%;
+
+            section{
+
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        
+        }
     }
 }

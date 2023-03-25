@@ -3,10 +3,21 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+main article {
+  width: 85%;
+}
 main article section a img {
-  width: 300px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid black;
-  border-radius: 5%;
+}
+
+@media screen and (min-width: 480px) {
+  main article {
+    width: 40%;
+  }
+  main article section a img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=blog.css.map */

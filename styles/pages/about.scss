@@ -11,10 +11,12 @@ main{
             align-items: center;
 
             img{
-                max-width: 75%;
+                width: 80%;
                 border-radius: 10%;
                 object-fit: cover;   
                 border: 3px solid $secondary-color;
+                align-items: center;
+                // margin: 0 auto;
             }
         }
     }
@@ -23,4 +25,59 @@ main{
 // Give margin to text in About page 
 .abouttext{
     margin: 15px;
+}
+
+// When the width of screen is above 480px (mobile), make the image appear on the bottom
+@media screen and (min-width: $mobile){
+    main{
+
+        article{
+
+            section{
+
+                .abouttext{
+                    order: -1;
+                }
+
+                img{
+                    width: 60%;
+               }
+            }
+        }
+    }
+}
+
+// When the screen is wider than 768px, make the section elements appear in a row format
+@media screen and (min-width: $tablet){
+    main{
+
+        article{
+
+            section{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                img{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+// When screen is larger than 1008 pixels, the image width will 
+// only be 30% of the section
+@media screen and (min-width: 1008px){
+    main{
+        article{
+
+            section{
+
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
 }
