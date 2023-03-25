@@ -35,8 +35,8 @@
 .mountain .triangle2 .inner_triangle2 {
   width: 100%;
   height: 100%;
-  -webkit-clip-path: polygon(26% 4%, 74% 4%, 97% 91%, 2.5% 91%);
-          clip-path: polygon(26% 4%, 74% 4%, 97% 91%, 2.5% 91%);
+  -webkit-clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
+          clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
 }
 .mountain .triangle3 {
   width: 45%;
@@ -61,8 +61,8 @@
 .mountain .triangle4 .inner_triangle4 {
   width: 100%;
   height: 100%;
-  -webkit-clip-path: polygon(12.7% 5%, 88% 6%, 98% 90%, 1.7% 91%);
-          clip-path: polygon(12.7% 5%, 88% 6%, 98% 90%, 1.7% 91%);
+  -webkit-clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
+          clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
 }
 .mountain .triangle5 {
   width: 75%;
@@ -90,4 +90,34 @@
 }
 .hometext p {
   color: #283618;
+}
+
+@media screen and (max-width: 480px) {
+  .mountain .triangle {
+    width: 95%;
+    height: 40vh;
+    margin-top: 20vh;
+    margin-bottom: 40vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    height: 10vh;
+  }
+  .mountain .triangle {
+    height: 16vh;
+  }
+  .mountain .triangle2 {
+    height: 16vh;
+  }
+  .mountain .triangle3 {
+    height: 16vh;
+  }
+  .mountain .triangle4 {
+    height: 16vh;
+  }
+  .mountain .triangle5 {
+    height: 16vh;
+    margin-bottom: 10vh;
+  }
 }/*# sourceMappingURL=home.css.map */

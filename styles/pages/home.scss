@@ -6,6 +6,8 @@
     height: 100%;
 }
 
+$image-height: 16vh;
+
 // Create shape for photos to be held in and assign orientation to vertical and centre
 .mountain{
     display: flex;
@@ -43,7 +45,7 @@
 
         .inner_triangle2{
             @include inner-triangle-dimensions();
-            clip-path: polygon(26% 4%, 74% 4%, 97% 91%, 2.5% 91%);
+            clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
         }  
     }
     .triangle3 {
@@ -65,7 +67,7 @@
 
         .inner_triangle4{
             @include inner-triangle-dimensions();
-            clip-path: polygon(12.7% 5%, 88% 6%, 98% 90%, 1.7% 91%);
+            clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
         }
     }  
     .triangle5 {
@@ -95,5 +97,57 @@
 
     p{
         color: $primary-color;
+    }
+}
+
+// When the screen is smaller than 480px, the top triangle will 
+// take up the whole screen. Using viewport to be responsive
+// across different mobile widths/heights.
+@media screen and (max-width: $mobile){
+    .mountain{
+
+        .triangle{
+            width: 95%;
+            // Height and margin to take up 100vh combined
+            // so on any mobile screen under 480px, the top
+            // of the mountain will take up the entire
+            // screen height
+            height: 40vh;
+            margin-top: 20vh;
+            margin-bottom: 40vh;
+
+        }
+    }
+}
+
+
+@media screen and (min-width: $tablet){
+
+    header{
+        height: 10vh;
+    }
+
+    .mountain{
+
+        .triangle{
+            height: $image-height;
+        }
+
+        .triangle2{
+            height: $image-height;
+        }
+
+        .triangle3{
+            height: $image-height;
+        }
+
+        .triangle4{
+            height: $image-height;
+        }
+
+        .triangle5{
+            height: $image-height;
+            margin-bottom: 10vh;
+        }
     }
 }

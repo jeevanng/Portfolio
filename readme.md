@@ -240,6 +240,9 @@ This will contain the styling of individual components which are as following at
 ## Defaults
 This will contain the default variables such as colors, breakpoints etc. 
 
+# Documents
+Contains a pdf file which is my resume. Link will be added via a button on the "work page"
+
 # Javascript
 The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally)
 
