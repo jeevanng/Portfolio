@@ -1,12 +1,12 @@
 header {
   background-color: #FEFAE0;
-  font-family: "Secular One", sans-serif;
+  font-family: "Bebas Neue", cursive;
 }
 header .topnav .active {
-  font-size: 24px;
+  font-size: 2rem;
 }
 header .topnav .fourlinks {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 .topnav {
@@ -27,7 +27,7 @@ header .topnav .fourlinks {
 }
 .topnav .icon {
   display: none;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,9 +57,13 @@ header .topnav .fourlinks {
 }
 
 @media screen and (min-width: 768px) {
-  .fourlinks {
+  header .topnav .active {
+    font-size: 3rem;
+  }
+  header .topnav .fourlinks {
     display: flex;
     justify-content: flex-end;
+    font-size: 2rem;
   }
 }
 footer {
@@ -89,16 +93,20 @@ footer i {
   color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  footer {
+    font-size: 1rem;
+  }
   footer .social-media {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 480px) {
   footer .social-media {
-    width: 50%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
   }

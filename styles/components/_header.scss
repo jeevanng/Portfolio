@@ -1,13 +1,13 @@
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
-$primaryfontsize: 24px;
-$secondaryfontsize: 18px;
+$primaryfontsize: 2rem;
+$secondaryfontsize: 1.5rem;
 
 // Add a beige/sand background color to the topnav
 header{
     background-color: $base-color;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Bebas Neue', cursive; 
 
     .topnav{
         
@@ -58,7 +58,7 @@ header{
 // the topnav (.icon)
 @media screen and (max-width: $tablet){
     .topnav{
-      
+    
         a{
             &:not(.active){
                 display: none;
@@ -71,6 +71,8 @@ header{
         }
     }
 }
+
+
 
 // The responsive class is added to the topnav with Javascript when the
 // user clicks on the icon. This class makes the topnav look good on small 
@@ -98,9 +100,21 @@ header{
 
 // When width is above 768px, move the links to the right excluding "Jeevan Ng" (Home Page)
 @media screen and (min-width: $tablet){
-    
-    .fourlinks{
-        display: flex;
-        justify-content: flex-end;
+    header{
+
+        .topnav{
+        
+            // Change font size of name "Jeevan Ng"
+            .active{
+            font-size: 3rem;
+            }
+
+            // Change font size of other links 
+            .fourlinks{
+            display: flex;
+            justify-content: flex-end;
+            font-size: 2rem;
+            }
+        }
     }
 }

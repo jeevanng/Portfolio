@@ -41,18 +41,20 @@ footer{
     }
 }
 
-// When the screen is less than 768 pixels wide, hide all links, except for the 
-// first one ("Jeevan Ng"). Show the link that contains should open and close 
-// the topnav (.icon)
-@media screen and (max-width: $tablet){
+// When the screen width is wider than 768 pixels, change the properties 
+// contained within the footer
+@media screen and (min-width: $tablet){
     
-    // Center social media icons when below 480px
+    // Center social media icons when below 768px
     footer{
+        font-size: 1rem;
 
         .social-media{
             width: 60%;
             margin-left: auto;
             margin-right: auto;
+            // Change size of icons
+            font-size: 26px;
         }
     }
 }
@@ -62,7 +64,7 @@ footer{
     footer{
 
         .social-media{
-            width: 50%;
+            width: 55%;
             margin-left: auto;
             margin-right: auto;
         }

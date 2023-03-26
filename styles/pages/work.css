@@ -1,6 +1,20 @@
+main {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+}
 main article .resume {
   display: flex;
   justify-content: center;
+}
+main article .resume #resume-button {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  color: #283618;
+  background-color: #BC6C25;
+}
+main article .resume #resume-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 main article section {
   margin: 15px;
@@ -13,9 +27,9 @@ main article section .workphotos {
 }
 main article section .workphotos img {
   width: 85%;
-  border: 3px solid #606C38;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 3px solid black;
 }
 
 @media screen and (min-width: 480px) {

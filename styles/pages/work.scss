@@ -2,12 +2,28 @@
 @import "../defaults/breakpoints";
 
 main{
+    // Change font and size of text in work page
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.5rem;
 
     article{
 
             .resume{
                 display: flex;
                 justify-content: center;
+
+                // Change font and size of text in Button 
+                #resume-button{
+                    font-family: 'Bebas Neue', cursive; 
+                    font-size: 1.5rem;
+                    color: $primary-color;
+                    background-color: $fourth-color;
+
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
             }
 
         section{
@@ -22,11 +38,13 @@ main{
                 img{
                     width: 85%;
                     // border-radius: 5%;
-                    border: 3px solid $secondary-color;
                     object-fit: cover;
+                    border: 3px solid black;
+
                 }
             }   
         }
+        
     }
 }
 

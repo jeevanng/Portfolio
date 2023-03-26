@@ -42,6 +42,7 @@ $image-height: 16vh;
         height: 100px;
         background-color: black;
         clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
+        position: sticky;
 
         .inner_triangle2{
             @include inner-triangle-dimensions();
@@ -85,7 +86,6 @@ $image-height: 16vh;
 
 // Change the text and attributes in the home page 
 .hometext{
-    font-family: 'Fira Sans', sans-serif;
     text-align: center;
     font-size: 2rem;
     padding: 10px;
@@ -120,8 +120,13 @@ $image-height: 16vh;
     }
 }
 
-
+// When the screen is wider than 768px, make the triangle take up the whole viewport
 @media screen and (min-width: $tablet){
+
+    // Change size of text in home page
+    .hometext{
+        font-size: 2.8rem;
+    }
 
     header{
         height: 10vh;
