@@ -6,6 +6,17 @@
     height: 100%;
 }
 
+@mixin inner-triangle-text{
+    color: $base-color;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 10px;
+}
+
 $image-height: 16vh;
 
 // Create shape for photos to be held in and assign orientation to vertical and centre
@@ -42,11 +53,15 @@ $image-height: 16vh;
         height: 100px;
         background-color: black;
         clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
-        position: sticky;
+        position: relative;
 
         .inner_triangle2{
             @include inner-triangle-dimensions();
             clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
+
+            .inner_triangle2_text{
+               @include inner-triangle-text();
+            }
         }  
     }
     .triangle3 {
@@ -54,10 +69,15 @@ $image-height: 16vh;
         height: 100px;
         background-color: black;
         clip-path: polygon(16% 0%, 84% 0%, 100% 95%, 0% 95%);
+        position: relative;
 
         .inner_triangle3 {
             @include inner-triangle-dimensions();
             clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
+
+            .inner_triangle3_text{
+                @include inner-triangle-text();
+            }
         }
     }  
     .triangle4 {
@@ -65,10 +85,15 @@ $image-height: 16vh;
         height: 100px;
         background-color: black;
         clip-path: polygon(12% 0%, 88% 0%, 100% 95%, 0% 95%);
+        position: relative;
 
         .inner_triangle4{
             @include inner-triangle-dimensions();
             clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
+
+            .inner_triangle4_text{
+                @include inner-triangle-text();
+            }
         }
     }  
     .triangle5 {
@@ -76,10 +101,15 @@ $image-height: 16vh;
         height: 100px;
         background-color: black;
         clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 95%, 0% 95%);
+        position: relative;
 
         .inner_triangle5{
             @include inner-triangle-dimensions();
             clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
+
+            .inner_triangle5_text{
+                @include inner-triangle-text();
+            }
         }
     }  
 }
@@ -115,10 +145,55 @@ $image-height: 16vh;
             height: 40vh;
             margin-top: 20vh;
             margin-bottom: 40vh;
+        }
 
+        // Change size of triangles and font size of text
+        .triangle2{
+            width: 35%;
+
+            .inner_triangle2{
+
+                .inner_triangle2_text{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .triangle3{
+            width: 55%;
+
+            .inner_triangle3{
+
+                .inner_triangle3_text{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+        .triangle4{
+            width: 75%;
+
+            .inner_triangle4{
+
+                .inner_triangle4_text{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+        .triangle5{
+            width: 95%;
+
+            .inner_triangle5{
+
+                .inner_triangle5_text{
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }
+
 
 // When the screen is wider than 768px, make the triangle take up the whole viewport
 @media screen and (min-width: $tablet){

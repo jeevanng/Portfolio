@@ -31,7 +31,7 @@
   background-color: black;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
-  position: sticky;
+  position: relative;
 }
 .mountain .triangle2 .inner_triangle2 {
   width: 100%;
@@ -39,12 +39,23 @@
   -webkit-clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
           clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
 }
+.mountain .triangle2 .inner_triangle2 .inner_triangle2_text {
+  color: #FEFAE0;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 10px;
+}
 .mountain .triangle3 {
   width: 45%;
   height: 100px;
   background-color: black;
   -webkit-clip-path: polygon(16% 0%, 84% 0%, 100% 95%, 0% 95%);
           clip-path: polygon(16% 0%, 84% 0%, 100% 95%, 0% 95%);
+  position: relative;
 }
 .mountain .triangle3 .inner_triangle3 {
   width: 100%;
@@ -52,12 +63,23 @@
   -webkit-clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
           clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
 }
+.mountain .triangle3 .inner_triangle3 .inner_triangle3_text {
+  color: #FEFAE0;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 10px;
+}
 .mountain .triangle4 {
   width: 60%;
   height: 100px;
   background-color: black;
   -webkit-clip-path: polygon(12% 0%, 88% 0%, 100% 95%, 0% 95%);
           clip-path: polygon(12% 0%, 88% 0%, 100% 95%, 0% 95%);
+  position: relative;
 }
 .mountain .triangle4 .inner_triangle4 {
   width: 100%;
@@ -65,18 +87,39 @@
   -webkit-clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
           clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
 }
+.mountain .triangle4 .inner_triangle4 .inner_triangle4_text {
+  color: #FEFAE0;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 10px;
+}
 .mountain .triangle5 {
   width: 75%;
   height: 100px;
   background-color: black;
   -webkit-clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 95%, 0% 95%);
           clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 95%, 0% 95%);
+  position: relative;
 }
 .mountain .triangle5 .inner_triangle5 {
   width: 100%;
   height: 100%;
   -webkit-clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
           clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
+}
+.mountain .triangle5 .inner_triangle5 .inner_triangle5_text {
+  color: #FEFAE0;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 10px;
 }
 
 .hometext {
@@ -98,6 +141,30 @@
     height: 40vh;
     margin-top: 20vh;
     margin-bottom: 40vh;
+  }
+  .mountain .triangle2 {
+    width: 35%;
+  }
+  .mountain .triangle2 .inner_triangle2 .inner_triangle2_text {
+    font-size: 1.5rem;
+  }
+  .mountain .triangle3 {
+    width: 55%;
+  }
+  .mountain .triangle3 .inner_triangle3 .inner_triangle3_text {
+    font-size: 1.5rem;
+  }
+  .mountain .triangle4 {
+    width: 75%;
+  }
+  .mountain .triangle4 .inner_triangle4 .inner_triangle4_text {
+    font-size: 1.5rem;
+  }
+  .mountain .triangle5 {
+    width: 95%;
+  }
+  .mountain .triangle5 .inner_triangle5 .inner_triangle5_text {
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 768px) {

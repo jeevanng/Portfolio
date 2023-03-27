@@ -1,6 +1,6 @@
 main {
   font-family: "Bebas Neue", cursive;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 main article section {
   display: flex;
@@ -8,10 +8,46 @@ main article section {
   align-items: center;
   padding: 10px;
 }
+main article section .abouttext {
+  margin: 15px;
+}
+main article section .abouttext .climbing_icon {
+  list-style: none;
+  padding: 5px 45px;
+  background-image: url("../../images/hand-back-fist-solid.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+}
+main article section .abouttext .hiking_icon {
+  list-style: none;
+  padding: 5px 45px;
+  background-image: url("../../images/person-hiking-solid.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+}
+main article section .abouttext .camping_icon {
+  list-style: none;
+  padding: 5px 45px;
+  background-image: url("../../images/campground-solid.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
+}
+main article section .abouttext .riding_icon {
+  list-style: none;
+  padding: 5px 45px;
+  background-image: url("../../images/bicycle-solid.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 38px;
+}
 main article section #hobbies {
   padding: 20px;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 10%;
+  margin-bottom: 30px;
 }
 main article section img {
   width: 80%;
@@ -19,10 +55,6 @@ main article section img {
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid black;
-}
-
-.abouttext {
-  margin: 15px;
 }
 
 @media screen and (min-width: 480px) {

@@ -1,6 +1,7 @@
 header {
   background-color: #FEFAE0;
   font-family: "Bebas Neue", cursive;
+  padding: 10px;
 }
 header .topnav .active {
   font-size: 2rem;
@@ -64,6 +65,9 @@ header .topnav .fourlinks {
     display: flex;
     justify-content: flex-end;
     font-size: 2rem;
+  }
+  header .topnav #fourlinks_home {
+    display: none;
   }
 }
 footer {

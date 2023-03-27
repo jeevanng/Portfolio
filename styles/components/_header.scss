@@ -8,6 +8,7 @@ $secondaryfontsize: 1.5rem;
 header{
     background-color: $base-color;
     font-family: 'Bebas Neue', cursive; 
+    padding: 10px;
 
     .topnav{
         
@@ -114,6 +115,11 @@ header{
             display: flex;
             justify-content: flex-end;
             font-size: 2rem;
+            }
+
+            // Hide the nav bar links on home page only
+            #fourlinks_home{
+                display: none;
             }
         }
     }

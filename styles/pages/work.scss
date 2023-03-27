@@ -1,23 +1,29 @@
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
+// Change the properties of the buttons on the page
+@mixin primary-button{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.8rem;
+    color: $primary-color;
+    background-color: $fourth-color;
+}
+
 main{
     // Change font and size of text in work page
     font-family: 'Bebas Neue', cursive; 
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 
     article{
+        padding: 10px;
 
             .resume{
                 display: flex;
                 justify-content: center;
+                padding-bottom: 10px;
 
-                // Change font and size of text in Button 
                 #resume-button{
-                    font-family: 'Bebas Neue', cursive; 
-                    font-size: 1.5rem;
-                    color: $primary-color;
-                    background-color: $fourth-color;
+                    @include primary-button();
 
                     &:hover{
                         cursor: pointer;
@@ -32,46 +38,86 @@ main{
             .workphotos{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
                 gap: 15px;
-                
-                img{
-                    width: 85%;
-                    // border-radius: 5%;
-                    object-fit: cover;
-                    border: 3px solid black;
+                text-align: center;
+                justify-content: space-between;
 
+                .work-project{
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid black;
+
+                        #project-button{
+                            @include primary-button();
+
+                            &:hover{
+                                cursor: pointer;
+                                opacity: 0.8;
+                            }
+                        }
+
+                    .project_text{
+                        border-bottom: 1px solid black;
+                    }
+
+                    img{
+                        width: 90%;
+                        // border-radius: 5%;
+                        object-fit: cover;
+                        border: 3px solid black;
+                    }  
                 }
             }   
         }
-        
     }
 }
 
+// When screen is wider than 480 pixels, make these changes
 @media screen and (min-width: $mobile){
     main{
 
         article{
-
-                // Resume button to move back to the left when screen is wider than 600px
-            .resume{
-                justify-content: flex-start;
-                }
-
+        
             section{
 
-                // Align images to be next to each other with equal space around
                 .workphotos{
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 10px;
-                    
-                    // Resize image width to percentage to be responsive on all devices
-                    img{
-                        width: 40%;
+
+                    .work-project{
+                       
+                        // Resize image width to percentage to be responsive on all devices
+                        img{
+                            width: 75%;
+                        }  
                     }
+
+                    
                 }
 
+            }
+        }
+    }
+}
+
+// When screen is wider than 768px width
+@media screen and (min-width: $tablet){
+    main{
+
+        article{
+        
+        // Move resume button to left 
+        .resume{
+            justify-content: flex-start;
+        }
+            section{
+
+                .workphotos{
+
+                    .work-project{
+                        
+                        img{
+                            width: 60%;
+                        }
+                    }
+                }
             }
         }
     }
