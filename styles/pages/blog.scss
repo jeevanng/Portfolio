@@ -6,31 +6,59 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.8rem;
 
     // Percentage allow the article to be responsive to all screen widths
     // whilst maintaining the ratio of screen space the article
     // takes
     article{
-        width: 85%;
+        width: 80%;
 
         section{
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            
+            // Remove underline for hyperlink
+            text-decoration: none;
+
+            h4{
+                padding: 0;
+                margin: 0;
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                border: 3px solid black;
+                // border-radius: 5%;
+            }
 
             a{
+                // Center buttons and remove underline
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
 
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                    border: 3px solid black;
-                    // border-radius: 5%;
+                // Style buttons on page
+                #blog-button{
+                    font-family: 'Bebas Neue', cursive; 
+                    font-size: 1.8rem;
+                    color: $primary-color;
+                    background-color: $fourth-color;
+
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
                 }
             }
         }
-
     }
 }
 
-// When the screen is wider than 480px, make the blog images appear in a wrap format, side by side.
-@media screen and (min-width: $mobile){
+// When the screen is wider than 1008px, make the blog images appear in a wrap format, side by side.
+@media screen and (min-width: $desktop){
     main{
 
         // Make the article take 40% of the screen

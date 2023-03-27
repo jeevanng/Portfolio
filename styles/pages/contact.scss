@@ -6,6 +6,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.8rem;
 
     h2{
         color: $primary-color;
@@ -25,7 +27,7 @@ main{
             }
 
             label{
-                font-size: 1.2rem;
+                font-size: 1.8rem;
             }
 
             // Change properties of input
@@ -54,10 +56,12 @@ main{
                 font-size: 1rem;
                 min-height: 40px;
                 min-width: 100px;
-                background-color: $secondary-color;
-                color: $base-color;
                 border: 1 solid $primary-color;
                 outline: none;
+                font-family: 'Bebas Neue', cursive; 
+                font-size: 1.8rem;
+                color: $primary-color;
+                background-color: $fourth-color;
 
                 &:hover{
                     cursor: pointer;

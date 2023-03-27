@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan Ng</title> 
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/pages/blog_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font "Secular One" -->
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <!-- Google Font "Fira Sans" -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:ital,wght@0,300;1,200&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Font "Bebas Neue" -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Top Navigation Bar -->
+<header>
+    <nav class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">
+            <div>
+                JEEVAN NG
+            </div>
+            <!-- <img src="../images/potential_logo.png" alt="logo" class="logo_image"> -->
+        </a>
+        <div class="fourlinks">
+            <a href="./about.html" class="otherLinks">ABOUT</a>
+            <a href="./work.html" class="otherLinks">WORK</a>
+            <a href="./blog.html" class="otherLinks">BLOG</a>
+            <a href="./Contact.html" class="otherLinks">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <section>
+            <img src="../images/crypto_blog-min.jpg" alt="tech_photo"></img>
+        </section>
+        <section>
+            <h3>THE FUTURE OF CRYPTO</h3>
+        </section>
+        <section>
+            <p>
+                <div class="blog_text">
+                    Cryptocurrency has revolutionized the way we think about money and 
+                    finance. As we move into the future, it's clear that crypto will 
+                    continue to play a major role in our lives. Blockchain technology, 
+                    which underpins most cryptocurrencies, offers unparalleled security 
+                    and transparency, making it ideal for everything from banking to healthcare.
+                </div>
+                <div class="blog_text">
+                    <br>In the coming years, we can expect to see even more widespread adoption 
+                    of cryptocurrencies, with more people using them as a means of payment 
+                    and investment. We may also see the emergence of new cryptocurrencies 
+                    that address specific needs, such as privacy or environmental concerns.
+                <div class="blog_text">
+                    <br>However, as with any emerging technology, there are also risks and 
+                    challenges. Governments and regulatory bodies will need to navigate the 
+                    complex legal and economic implications of crypto, while users will need to 
+                    be vigilant against scams and fraud.
+                </div>
+                <div class="blog_text">
+                    <br>Overall, the future of crypto is bright, with the potential to 
+                    transform the way we live and work. However, it will require responsible 
+                    management and oversight to ensure its success.
+                </div>
+        </section>
+        <section>
+            <a href="./blog.html">
+                <button id="blog5-button" type="button">Go Back</button>
+            </a>
+        </section>
+    </article>
+</main>
+
+<!-- Footer for home page  -->
+<footer>
+    <div class="info">
+        <p class="copyright">Copyright @ 2023 Jeevan Ng. All rights reserved.</p>
+        <p class="info2">Get in touch</p>
+    </div>
+    <!-- Links open new tab to have user stay on Portfolio page -->
+    <div class="social-media">
+        <a href="https://www.github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </div>
+</footer>
+
+<!-- Javascript Code for top nav bar-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+</script>
+    
+</body>
+
+</html>

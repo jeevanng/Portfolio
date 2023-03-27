@@ -2,18 +2,44 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
 }
 main article {
-  width: 85%;
+  width: 80%;
 }
-main article section a img {
+main article section {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+}
+main article section h4 {
+  padding: 0;
+  margin: 0;
+}
+main article section img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid black;
 }
+main article section a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+main article section a #blog-button {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
+  color: #283618;
+  background-color: #BC6C25;
+}
+main article section a #blog-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1024px) {
   main article {
     width: 40%;
   }

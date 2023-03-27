@@ -2,6 +2,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
 }
 main h2 {
   color: #283618;
@@ -16,7 +18,7 @@ main form .form-elements .form-textarea {
   resize: none;
 }
 main form .form-elements label {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 main form .form-elements .form-input {
   border: 1px solid black;
@@ -38,10 +40,12 @@ main form .btn-div #submit {
   font-size: 1rem;
   min-height: 40px;
   min-width: 100px;
-  background-color: #606C38;
-  color: #FEFAE0;
   border: 1 solid #283618;
   outline: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
+  color: #283618;
+  background-color: #BC6C25;
 }
 main form .btn-div #submit:hover {
   cursor: pointer;

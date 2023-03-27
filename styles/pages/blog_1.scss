@@ -1,0 +1,66 @@
+@import "../defaults/color";
+@import "../defaults/breakpoints";
+
+main{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.8rem;
+
+    article{    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        padding-bottom: 30px;
+
+        section{
+
+            img{
+                width: 40%;
+                display: block;
+                margin: auto;
+                border: 1px solid black;
+                border-radius: 10%;
+            }
+
+            #blog5-button{
+                font-family: 'Bebas Neue', cursive; 
+                font-size: 1.8rem;
+                color: $primary-color;
+                background-color: $fourth-color;
+                margin: 15px;
+
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+// When width is 768px and under
+@media screen and (max-width: $tablet){
+    main{
+        article{
+            section{
+                img{
+                    width: 60%;
+                }
+            }
+        }
+     }
+}
+
+// When width is 480px and under
+@media screen and (max-width: $mobile){
+    main{
+        article{
+            section{
+                img{
+                    width: 75%;
+                }
+            }
+        }
+    }
+}

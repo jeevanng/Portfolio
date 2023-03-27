@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan Ng</title> 
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/pages/blog_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font "Secular One" -->
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <!-- Google Font "Fira Sans" -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:ital,wght@0,300;1,200&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Font "Bebas Neue" -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Top Navigation Bar -->
+<header>
+    <nav class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">
+            <div>
+                JEEVAN NG
+            </div>
+            <!-- <img src="../images/potential_logo.png" alt="logo" class="logo_image"> -->
+        </a>
+        <div class="fourlinks">
+            <a href="./about.html" class="otherLinks">ABOUT</a>
+            <a href="./work.html" class="otherLinks">WORK</a>
+            <a href="./blog.html" class="otherLinks">BLOG</a>
+            <a href="./Contact.html" class="otherLinks">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <section>
+            <img src="../images/economy_blog-min.jpg" alt="tech_photo"></img>
+        </section>
+        <section>
+            <h3>THE CURRENT ECONOMY AND TECH</h3>
+        </section>
+        <section>
+            <p>
+                <div class="blog_text">
+                    The current global economy is becoming increasingly reliant on technology. 
+                    The tech industry is one of the fastest-growing sectors in the world, with 
+                    companies like Apple, Microsoft, and Amazon leading the charge. As the world 
+                    becomes more interconnected, the demand for technology and digital solutions 
+                    continues to grow.
+                </div>
+                <div class="blog_text">
+                    <br>The COVID-19 pandemic has accelerated the shift towards a digital economy. 
+                    With lockdowns and social distancing measures in place, businesses have had to 
+                    adapt to survive. Many have turned to technology to stay connected with customers 
+                    and maintain operations. This has led to an increased demand for digital solutions, 
+                    such as online shopping, video conferencing, and remote work tools.
+                <div class="blog_text">
+                    <br>As a result of this shift, the tech industry has seen unprecedented growth. 
+                    Tech giants like Amazon, Microsoft, and Apple have seen their valuations soar, with 
+                    Amazon's market capitalization reaching over $1.5 trillion. This growth has not been 
+                    limited to established players, however. Startups and smaller tech companies have also 
+                    seen significant growth, with many receiving funding from venture capitalists and 
+                    private equity firms.
+                </div>
+                <div class="blog_text">
+                    <br>The tech industry has also had a profound impact on other sectors of the economy. 
+                    For example, the rise of e-commerce has disrupted traditional brick-and-mortar retail, 
+                    leading to the closure of many physical stores. Similarly, the growth of cloud computing 
+                    has disrupted the traditional software industry, with many companies switching to 
+                    subscription-based models.
+                    However, the growth of the tech industry has not been without its challenges. The 
+                    increased reliance on technology has led to concerns about cybersecurity and data privacy. 
+                    As more data is collected and stored, there is a risk of data breaches and cyber attacks. 
+                    Additionally, there are concerns about the impact of automation on jobs, with some predicting 
+                    that up to 800 million jobs could be lost to automation by 2030.
+                    Overall, the current global economy is becoming increasingly reliant on technology. The 
+                    growth of the tech industry has led to significant changes in other sectors of the economy, 
+                    with both positive and negative impacts. As we move forward, it will be important to find a 
+                    balance between the benefits of technology and the potential risks it poses.
+                </div>
+        </section>
+        <section>
+            <a href="./blog.html">
+                <button id="blog5-button" type="button">Go Back</button>
+            </a>
+        </section>
+    </article>
+</main>
+
+<!-- Footer for home page  -->
+<footer>
+    <div class="info">
+        <p class="copyright">Copyright @ 2023 Jeevan Ng. All rights reserved.</p>
+        <p class="info2">Get in touch</p>
+    </div>
+    <!-- Links open new tab to have user stay on Portfolio page -->
+    <div class="social-media">
+        <a href="https://www.github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </div>
+</footer>
+
+<!-- Javascript Code for top nav bar-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+</script>
+    
+</body>
+
+</html>
