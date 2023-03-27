@@ -196,6 +196,9 @@ Added the blog page to contain five blog posts. Each with title and image. The c
         </section>
     </article>
 ```
+### Blog Posts
+Added 5 seperate pages/posts under the blog page. All with buttons that will redirect back to the previous page. 
+
 ## Contact
 Added a contact page with form and input fields. Allows the user to enter information to send a message. Code below;
 
