@@ -48,22 +48,30 @@ $image-height: 16vh;
             clip-path: polygon(52% 11%, 6% 93%, 15% 85%, 16% 92%, 27% 78%, 31% 89%, 42% 67%, 46% 89%, 50% 76%, 59% 92%, 69% 77%, 75% 90%, 81% 87%, 84% 91%, 84% 80%, 94% 92%);
         }
     }  
+
     .triangle2 {
         width: 30%;
         height: 100px;
         background-color: black;
         clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
+        // Fixes the image and text link, makes the text take the width of 
+        // this triangle and not the whole screen
         position: relative;
 
         .inner_triangle2{
             @include inner-triangle-dimensions();
             clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
 
-            .inner_triangle2_text{
-               @include inner-triangle-text();
-            }
+            .triangle_animate{
+                @include inner-triangle-dimensions();
+
+                .inner_triangle2_text{
+                @include inner-triangle-text();
+                }
+            } 
         }  
     }
+
     .triangle3 {
         width: 45%;
         height: 100px;
@@ -75,11 +83,16 @@ $image-height: 16vh;
             @include inner-triangle-dimensions();
             clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
 
-            .inner_triangle3_text{
-                @include inner-triangle-text();
+            .triangle_animate{
+               @include inner-triangle-dimensions();
+              
+                .inner_triangle3_text{
+                    @include inner-triangle-text();
+                } 
             }
         }
     }  
+
     .triangle4 {
         width: 60%;
         height: 100px;
@@ -91,11 +104,16 @@ $image-height: 16vh;
             @include inner-triangle-dimensions();
             clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
 
-            .inner_triangle4_text{
+            .triangle_animate{
+                @include inner-triangle-dimensions();
+
+                .inner_triangle4_text{
                 @include inner-triangle-text();
-            }
+                }
+            }   
         }
     }  
+
     .triangle5 {
         width: 75%;
         height: 100px;
@@ -107,9 +125,13 @@ $image-height: 16vh;
             @include inner-triangle-dimensions();
             clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
 
-            .inner_triangle5_text{
-                @include inner-triangle-text();
-            }
+            .triangle_animate{
+                @include inner-triangle-dimensions();
+
+                .inner_triangle5_text{
+                    @include inner-triangle-text();
+                }  
+            }  
         }
     }  
 }
@@ -137,13 +159,13 @@ $image-height: 16vh;
     .mountain{
 
         .triangle{
-            width: 95%;
+            width: 75%;
             // Height and margin to take up 100vh combined
             // so on any mobile screen under 480px, the top
             // of the mountain will take up the entire
             // screen height
-            height: 40vh;
-            margin-top: 20vh;
+            height: 30vh;
+            margin-top: 30vh;
             margin-bottom: 40vh;
         }
 
@@ -153,8 +175,11 @@ $image-height: 16vh;
 
             .inner_triangle2{
 
-                .inner_triangle2_text{
-                    font-size: 1.5rem;
+                .triangle_animate{
+                    
+                    .inner_triangle2_text{
+                        padding-top: 50px;
+                    }  
                 }
             }
         }
@@ -164,8 +189,11 @@ $image-height: 16vh;
 
             .inner_triangle3{
 
-                .inner_triangle3_text{
-                    font-size: 1.5rem;
+                .triangle_animate{
+
+                    .inner_triangle3_text{
+                        padding-top: 50px;
+                    }
                 }
             }
         }
@@ -175,8 +203,11 @@ $image-height: 16vh;
 
             .inner_triangle4{
 
-                .inner_triangle4_text{
-                    font-size: 1.5rem;
+                    .triangle_animate{
+
+                        .inner_triangle4_text{
+                            padding-top: 50px;
+                    }
                 }
             }
         }
@@ -186,8 +217,11 @@ $image-height: 16vh;
 
             .inner_triangle5{
 
-                .inner_triangle5_text{
-                    font-size: 1.5rem;
+                .triangle_animate{
+
+                    .inner_triangle5_text{
+                        padding-top: 50px;
+                    }
                 }
             }
         }
@@ -204,7 +238,7 @@ $image-height: 16vh;
     }
 
     header{
-        height: 10vh;
+        height: 7vh;
     }
 
     .mountain{
@@ -227,7 +261,38 @@ $image-height: 16vh;
 
         .triangle5{
             height: $image-height;
-            margin-bottom: 10vh;
+            margin-bottom: 13vh;
+        }
+    }
+}
+
+// Animate the links/images to slightly zoom in on hover when 
+// screen is above width 768px
+@media screen and (min-width: $tablet){
+
+    .triangle_animate{
+        transition: transform 1s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+// Animate top triangle when width is under 768px
+@media screen and (max-width: $tablet){
+    .triangle{
+        animation: rotation 2.5s;
+        // Keep animation in rotated position
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes rotation{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(180deg);
         }
     }
 }

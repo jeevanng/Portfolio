@@ -46,21 +46,22 @@ main{
                     padding-bottom: 10px;
                     border-bottom: 1px solid black;
 
-                        #project-button{
-                            @include primary-button();
+                    #project-button{
+                        @include primary-button();
 
-                            &:hover{
-                                cursor: pointer;
-                                opacity: 0.8;
-                            }
+                        &:hover{
+                            cursor: pointer;
+                            opacity: 0.8;
                         }
+                    }
 
                     .project_text{
                         border-bottom: 1px solid black;
                     }
-
+                    
+    
                     img{
-                        width: 90%;
+                        width: 80%;
                         // border-radius: 5%;
                         object-fit: cover;
                         border: 3px solid black;

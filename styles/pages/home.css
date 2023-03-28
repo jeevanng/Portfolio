@@ -39,7 +39,11 @@
   -webkit-clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
           clip-path: polygon(26.3% 4%, 73.8% 4%, 96.8% 91%, 3.1% 91%);
 }
-.mountain .triangle2 .inner_triangle2 .inner_triangle2_text {
+.mountain .triangle2 .inner_triangle2 .triangle_animate {
+  width: 100%;
+  height: 100%;
+}
+.mountain .triangle2 .inner_triangle2 .triangle_animate .inner_triangle2_text {
   color: #FEFAE0;
   font-size: 2rem;
   position: absolute;
@@ -63,7 +67,11 @@
   -webkit-clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
           clip-path: polygon(17% 5%, 83% 4%, 97.8% 90%, 2% 91%);
 }
-.mountain .triangle3 .inner_triangle3 .inner_triangle3_text {
+.mountain .triangle3 .inner_triangle3 .triangle_animate {
+  width: 100%;
+  height: 100%;
+}
+.mountain .triangle3 .inner_triangle3 .triangle_animate .inner_triangle3_text {
   color: #FEFAE0;
   font-size: 2rem;
   position: absolute;
@@ -87,7 +95,11 @@
   -webkit-clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
           clip-path: polygon(12.7% 5%, 87.6% 6%, 98% 90%, 1.7% 91%);
 }
-.mountain .triangle4 .inner_triangle4 .inner_triangle4_text {
+.mountain .triangle4 .inner_triangle4 .triangle_animate {
+  width: 100%;
+  height: 100%;
+}
+.mountain .triangle4 .inner_triangle4 .triangle_animate .inner_triangle4_text {
   color: #FEFAE0;
   font-size: 2rem;
   position: absolute;
@@ -111,7 +123,11 @@
   -webkit-clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
           clip-path: polygon(10% 6%, 89.8% 5%, 98.5% 89%, 1.5% 90%);
 }
-.mountain .triangle5 .inner_triangle5 .inner_triangle5_text {
+.mountain .triangle5 .inner_triangle5 .triangle_animate {
+  width: 100%;
+  height: 100%;
+}
+.mountain .triangle5 .inner_triangle5 .triangle_animate .inner_triangle5_text {
   color: #FEFAE0;
   font-size: 2rem;
   position: absolute;
@@ -137,34 +153,34 @@
 
 @media screen and (max-width: 480px) {
   .mountain .triangle {
-    width: 95%;
-    height: 40vh;
-    margin-top: 20vh;
+    width: 75%;
+    height: 30vh;
+    margin-top: 30vh;
     margin-bottom: 40vh;
   }
   .mountain .triangle2 {
     width: 35%;
   }
-  .mountain .triangle2 .inner_triangle2 .inner_triangle2_text {
-    font-size: 1.5rem;
+  .mountain .triangle2 .inner_triangle2 .triangle_animate .inner_triangle2_text {
+    padding-top: 50px;
   }
   .mountain .triangle3 {
     width: 55%;
   }
-  .mountain .triangle3 .inner_triangle3 .inner_triangle3_text {
-    font-size: 1.5rem;
+  .mountain .triangle3 .inner_triangle3 .triangle_animate .inner_triangle3_text {
+    padding-top: 50px;
   }
   .mountain .triangle4 {
     width: 75%;
   }
-  .mountain .triangle4 .inner_triangle4 .inner_triangle4_text {
-    font-size: 1.5rem;
+  .mountain .triangle4 .inner_triangle4 .triangle_animate .inner_triangle4_text {
+    padding-top: 50px;
   }
   .mountain .triangle5 {
     width: 95%;
   }
-  .mountain .triangle5 .inner_triangle5 .inner_triangle5_text {
-    font-size: 1.5rem;
+  .mountain .triangle5 .inner_triangle5 .triangle_animate .inner_triangle5_text {
+    padding-top: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -172,7 +188,7 @@
     font-size: 2.8rem;
   }
   header {
-    height: 10vh;
+    height: 7vh;
   }
   .mountain .triangle {
     height: 16vh;
@@ -188,6 +204,28 @@
   }
   .mountain .triangle5 {
     height: 16vh;
-    margin-bottom: 10vh;
+    margin-bottom: 13vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .triangle_animate {
+    transition: transform 1s;
+  }
+  .triangle_animate:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .triangle {
+    animation: rotation 2.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
   }
 }/*# sourceMappingURL=home.css.map */
