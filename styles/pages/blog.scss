@@ -27,30 +27,17 @@ main{
                 margin: 0;
             }
 
-            img{
-                width: 100%;
-                object-fit: cover;
+            .outer_image_border{
                 border: 3px solid black;
-                // border-radius: 5%;
-            }
-
-            a{
-                // Center buttons and remove underline
-                display: flex;
-                justify-content: center;
-                text-decoration: none;
-
-                // Style buttons on page
-                #blog-button{
-                    font-family: 'Bebas Neue', cursive; 
-                    font-size: 1.8rem;
-                    color: $primary-color;
-                    background-color: $fourth-color;
-
-                    &:hover{
-                        cursor: pointer;
-                        opacity: 0.8;
-                    }
+                margin: none;
+                overflow: hidden;
+                    
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        // Moves image to bottom, removing gap
+                        vertical-align: bottom;
+                        text-align: center;
                 }
             }
         }
@@ -74,6 +61,21 @@ main{
                 }
             }
         
+        }
+    }
+}
+
+// Animate images in blog page to zoom in
+
+@media screen and (min-width: $tablet){
+
+    #image_animate{
+        transition: transform 0.75s;
+     
+        &:hover{
+            transform: scale(1.1);
+            opacity: 0.8;
+            cursor: pointer;
         }
     }
 }

@@ -17,26 +17,17 @@ main article section h4 {
   padding: 0;
   margin: 0;
 }
-main article section img {
+main article section .outer_image_border {
+  border: 3px solid black;
+  margin: none;
+  overflow: hidden;
+}
+main article section .outer_image_border img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 3px solid black;
-}
-main article section a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-main article section a #blog-button {
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.8rem;
-  color: #283618;
-  background-color: #BC6C25;
-}
-main article section a #blog-button:hover {
-  cursor: pointer;
-  opacity: 0.8;
+  vertical-align: bottom;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -45,5 +36,15 @@ main article section a #blog-button:hover {
   }
   main article section a img {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #image_animate {
+    transition: transform 0.75s;
+  }
+  #image_animate:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=blog.css.map */
