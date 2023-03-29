@@ -4,6 +4,7 @@
 main{
     font-family: 'Bebas Neue', cursive; 
     font-size: 1.8rem;
+    color: $primary-color;
 
     article{    
         display: flex;
@@ -14,6 +15,10 @@ main{
         padding-bottom: 30px;
 
         section{
+
+            h3{
+                color: black;
+            }
 
             img{
                 width: 40%;
@@ -26,7 +31,7 @@ main{
             #blog5-button{
                 font-family: 'Bebas Neue', cursive; 
                 font-size: 1.8rem;
-                color: $primary-color;
+                color: black;
                 background-color: $fourth-color;
                 margin: 15px;
 
@@ -39,7 +44,7 @@ main{
     }
 }
 
-// When width is 768px and under
+/* When width is 768px and under */
 @media screen and (max-width: $tablet){
     main{
         article{
@@ -52,7 +57,7 @@ main{
      }
 }
 
-// When width is 480px and under
+/* When width is 480px and under */
 @media screen and (max-width: $mobile){
     main{
         article{

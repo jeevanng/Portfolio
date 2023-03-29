@@ -1,36 +1,43 @@
+/* Add a beige/sand background color to the topnav*/
 header {
-  background-color: #FEFAE0;
+  background-color: #f8f6e9;
   font-family: "Bebas Neue", cursive;
-  padding: 10px;
+  padding: 15px;
 }
 header .topnav .active {
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
 header .topnav .fourlinks {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .topnav {
   overflow: hidden;
   margin-bottom: 24px;
+  /* Style the hyperlinks inside the navigation bar */
 }
 .topnav a {
   float: left;
   display: block;
-  color: #283618;
+  color: black;
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
+  /* Style the hyperlinks on hover */
 }
 .topnav a:hover {
-  background-color: #606C38;
-  color: #FEFAE0;
+  background-color: #67753a;
+  color: #f8f6e9;
 }
 .topnav .icon {
   display: none;
-  font-size: 2rem;
+  /* Change size of hamburger icon */
+  font-size: 2.75rem;
 }
 
+/* When the screen is less than 768 pixels wide, hide all links, except for the 
+ first one ("Jeevan Ng"). Show the link that contains should open and close 
+ the topnav (.icon)*/
 @media screen and (max-width: 768px) {
   .topnav a:not(.active) {
     display: none;
@@ -38,8 +45,12 @@ header .topnav .fourlinks {
   .topnav a.icon {
     float: right;
     display: block;
+    font-size: 2rem;
   }
 }
+/* The responsive class is added to the topnav with Javascript when the
+ user clicks on the icon. This class makes the topnav look good on small 
+ screens (display the links vertically instead of horizontally)*/
 .topnav.responsive {
   position: relative;
 }
@@ -57,6 +68,7 @@ header .topnav .fourlinks {
   text-align: center;
 }
 
+/* When width is above 768px, move the links to the right excluding "Jeevan Ng" (Home Page)*/
 @media screen and (min-width: 768px) {
   header .topnav .active {
     font-size: 3rem;
@@ -70,12 +82,31 @@ header .topnav .fourlinks {
     display: none;
   }
 }
+/* When the screen width is smaller than 480px change size of burger icon */
+@media screen and (max-width: 480px) {
+  .topnav a.icon {
+    font-size: 1.5rem;
+  }
+}
+/* Remove burger icon when width is smaller than 280px */
+@media screen and (max-width: 280px) {
+  .topnav a.icon {
+    display: none;
+  }
+}
+/* Add a beige/sand background color to the footer */
 footer {
-  background-color: #FEFAE0;
+  background-color: #f8f6e9;
   text-align: center;
   font-family: "Secular One", sans-serif;
-  font-size: 0.85rem;
+  /* Change font size of footer text */
+  font-size: 1rem;
+  /* Add padding to footer to give space from other elements */
   padding-top: 10px;
+  /* Space the social media icons and give margin from bottom screen */
+  /* Reduce space between paragraphs */
+  /* Change color of text in footer */
+  /* Change color of icons */
 }
 footer .social-media {
   display: flex;
@@ -97,7 +128,10 @@ footer i {
   color: black;
 }
 
+/* When the screen width is wider than 768 pixels, change the properties 
+ contained within the footer */
 @media screen and (min-width: 768px) {
+  /* Center social media icons when below 768px */
   footer {
     font-size: 1rem;
   }
@@ -108,6 +142,7 @@ footer i {
     font-size: 26px;
   }
 }
+/* Center social media icons and space them under text of footer when above 480px wide */
 @media screen and (min-width: 480px) {
   footer .social-media {
     width: 55%;
@@ -115,8 +150,17 @@ footer i {
     margin-right: auto;
   }
 }
+/* Change font size of footer
+When screen is smaller than 768px */
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 1.2rem;
+  }
+}
+/* Add a beige/sand background color to the body*/
 body {
-  background-color: #FEFAE0;
+  background-color: #f8f6e9;
+  /* Aligns children in column axis, and displays the footer on the bottom*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -126,6 +170,7 @@ body .hometext {
   font-family: "Bebas Neue", cursive;
 }
 
+/* Change size of logo*/
 .logo_image {
   width: 50px;
 }/*# sourceMappingURL=index.css.map */

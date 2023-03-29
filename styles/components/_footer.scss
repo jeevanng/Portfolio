@@ -1,17 +1,17 @@
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
-// Add a beige/sand background color to the footer
+/* Add a beige/sand background color to the footer */
 footer{
     background-color: $base-color;
     text-align: center;
     font-family: 'Secular One', sans-serif;
-    // Change font size of footer text
-    font-size: 0.85rem;
-    // Add padding to footer to give space from other elements
+    /* Change font size of footer text */
+    font-size: 1rem;
+    /* Add padding to footer to give space from other elements */
     padding-top: 10px;
 
-    // Space the social media icons and give margin from bottom screen
+    /* Space the social media icons and give margin from bottom screen */
     .social-media{
         display: flex;
         justify-content: space-around;
@@ -21,12 +21,12 @@ footer{
         font-size: 22px;
     }
 
-    // Reduce space between paragraphs
+    /* Reduce space between paragraphs */
     p{
         margin: 5px 0px;
     }
 
-    // Change color of text in footer
+    /* Change color of text in footer */
     .copyright{
         color: $fourth-color
     }
@@ -35,17 +35,17 @@ footer{
         color: $third-color
     }
 
-    // Change color of icons
+    /* Change color of icons */
     i{
         color: black;
     }
 }
 
-// When the screen width is wider than 768 pixels, change the properties 
-// contained within the footer
+/* When the screen width is wider than 768 pixels, change the properties 
+ contained within the footer */
 @media screen and (min-width: $tablet){
     
-    // Center social media icons when below 768px
+    /* Center social media icons when below 768px */
     footer{
         font-size: 1rem;
 
@@ -59,7 +59,7 @@ footer{
     }
 }
 
-// Center social media icons and space them under text of footer when above 480px wide
+/* Center social media icons and space them under text of footer when above 480px wide */
 @media screen and (min-width: $mobile){
     footer{
 
@@ -70,3 +70,12 @@ footer{
         }
     }
 }
+
+/* Change font size of footer
+When screen is smaller than 768px */
+@media screen and (max-width: $tablet){
+    footer{
+        font-size: 1.2rem;
+    }
+}
+

@@ -1,12 +1,15 @@
+/* Align children so that they are aligned in the column direction */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
+  color: #313e20;
+  padding-bottom: 75px;
 }
 main h2 {
-  color: #283618;
+  color: black;
 }
 main form .form-elements {
   display: flex;
@@ -25,6 +28,7 @@ main form .form-elements .form-input {
   border-radius: 4px;
   outline: none;
   font-size: 1.2rem;
+  /* Change font for input field */
   font-family: "Secular One", sans-serif;
 }
 main form .form-elements .form-input:not(.form-textarea) {
@@ -40,11 +44,11 @@ main form .btn-div #submit {
   font-size: 1rem;
   min-height: 40px;
   min-width: 100px;
-  border: 1 solid #283618;
+  border: 1 solid #313e20;
   outline: none;
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
-  color: #283618;
+  color: black;
   background-color: #BC6C25;
 }
 main form .btn-div #submit:hover {
@@ -52,11 +56,13 @@ main form .btn-div #submit:hover {
   opacity: 0.8;
 }
 
+/* Change the input to appear in a row when width is larger than 480 pixels */
 @media screen and (min-width: 480px) {
   main form .form-elements {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+    /* Change width of input field when screen is wider than 600px */
   }
   main form .form-elements .form-input {
     width: 400px;

@@ -4,6 +4,9 @@ main {
   justify-content: space-around;
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
+  /* Percentage allow the article to be responsive to all screen widths
+  whilst maintaining the ratio of screen space the article
+  takes */
 }
 main article {
   width: 80%;
@@ -11,11 +14,19 @@ main article {
 main article section {
   padding-bottom: 10px;
   border-bottom: 1px solid black;
+  /* Remove underline for hyperlink */
   text-decoration: none;
+}
+main article section h3 {
+  color: black;
 }
 main article section h4 {
   padding: 0;
   margin: 0;
+  color: black;
+}
+main article section p {
+  color: #313e20;
 }
 main article section .outer_image_border {
   border: 3px solid black;
@@ -26,10 +37,12 @@ main article section .outer_image_border img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  /* Moves image to bottom, removing gap */
   vertical-align: bottom;
   text-align: center;
 }
 
+/* When the screen is wider than 1008px, make the blog images appear in a wrap format, side by side. */
 @media screen and (min-width: 1024px) {
   main article {
     width: 40%;
@@ -38,6 +51,7 @@ main article section .outer_image_border img {
     width: 100%;
   }
 }
+/* Animate images in blog page to zoom in */
 @media screen and (min-width: 768px) {
   #image_animate {
     transition: transform 0.75s;

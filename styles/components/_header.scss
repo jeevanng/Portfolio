@@ -1,14 +1,14 @@
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
-$primaryfontsize: 2rem;
-$secondaryfontsize: 1.5rem;
+$primaryfontsize: 2.75rem;
+$secondaryfontsize: 2rem;
 
-// Add a beige/sand background color to the topnav
+/* Add a beige/sand background color to the topnav*/
 header{
     background-color: $base-color;
     font-family: 'Bebas Neue', cursive; 
-    padding: 10px;
+    padding: 15px;
 
     .topnav{
         
@@ -28,35 +28,35 @@ header{
     overflow: hidden;
     margin-bottom: 24px;
 
-    // Style the hyperlinks inside the navigation bar 
+    /* Style the hyperlinks inside the navigation bar */ 
     a{
         float: left;
         display: block;
-        color: $primary-color;
+        color: black;
         text-align: center;
         padding: 5px 16px;
         text-decoration: none;
         // Change font size of nav bar text
         // font-size: 24px;
         
-        // Style the hyperlinks on hover
+        /* Style the hyperlinks on hover */
         &:hover{
             background-color: $secondary-color;
             color: $base-color;
         }
     }
 
-    // Hide the link that should open and close the topnav on small screens
+    // Hide the link that should open and close the topnav on small screens 
     .icon{
         display: none;
-        // Change size of hamburger icon
+        /* Change size of hamburger icon */
         font-size: $primaryfontsize;
     }
 }
 
-// When the screen is less than 768 pixels wide, hide all links, except for the 
-// first one ("Jeevan Ng"). Show the link that contains should open and close 
-// the topnav (.icon)
+/* When the screen is less than 768 pixels wide, hide all links, except for the 
+ first one ("Jeevan Ng"). Show the link that contains should open and close 
+ the topnav (.icon)*/
 @media screen and (max-width: $tablet){
     .topnav{
     
@@ -69,15 +69,16 @@ header{
         a.icon{
             float: right;
             display: block;
+            font-size: 2rem;
         }
     }
 }
 
 
 
-// The responsive class is added to the topnav with Javascript when the
-// user clicks on the icon. This class makes the topnav look good on small 
-// screens (display the links vertically instead of horizontally)
+/* The responsive class is added to the topnav with Javascript when the
+ user clicks on the icon. This class makes the topnav look good on small 
+ screens (display the links vertically instead of horizontally)*/
 .topnav.responsive{
     position: relative;
 
@@ -99,7 +100,7 @@ header{
     }
 }
 
-// When width is above 768px, move the links to the right excluding "Jeevan Ng" (Home Page)
+/* When width is above 768px, move the links to the right excluding "Jeevan Ng" (Home Page)*/
 @media screen and (min-width: $tablet){
     header{
 
@@ -110,17 +111,38 @@ header{
             font-size: 3rem;
             }
 
-            // Change font size of other links 
+            // Change font size of other links
             .fourlinks{
             display: flex;
             justify-content: flex-end;
             font-size: 2rem;
             }
 
-            // Hide the nav bar links on home page only
+            // Hide the nav bar links on home page only 
             #fourlinks_home{
                 display: none;
             }
         }
     }
 }
+
+/* When the screen width is smaller than 480px change size of burger icon */
+@media screen and (max-width: $mobile){
+    .topnav{
+
+        a.icon{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/* Remove burger icon when width is smaller than 280px */
+@media screen and (max-width: 280px){
+    .topnav{
+
+        a.icon{
+            display: none;
+        }
+    }
+}
+

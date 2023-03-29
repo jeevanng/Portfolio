@@ -1,6 +1,8 @@
+/* Change the properties of the buttons on the page */
 main {
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
+  color: #313e20;
 }
 main article {
   padding: 10px;
@@ -13,7 +15,7 @@ main article .resume {
 main article .resume #resume-button {
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
-  color: #283618;
+  color: black;
   background-color: #BC6C25;
 }
 main article .resume #resume-button:hover {
@@ -22,6 +24,9 @@ main article .resume #resume-button:hover {
 }
 main article section {
   margin: 15px;
+}
+main article section h2 {
+  color: black;
 }
 main article section .workphotos {
   display: flex;
@@ -37,7 +42,7 @@ main article section .workphotos .work-project {
 main article section .workphotos .work-project #project-button {
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
-  color: #283618;
+  color: black;
   background-color: #BC6C25;
 }
 main article section .workphotos .work-project #project-button:hover {
@@ -54,11 +59,13 @@ main article section .workphotos .work-project img {
   border: 3px solid black;
 }
 
+/* When screen is wider than 480 pixels, make these changes */
 @media screen and (min-width: 480px) {
   main article section .workphotos .work-project img {
     width: 75%;
   }
 }
+/* When screen is wider than 768px width */
 @media screen and (min-width: 768px) {
   main article .resume {
     justify-content: flex-start;

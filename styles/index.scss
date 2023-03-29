@@ -3,11 +3,11 @@
 @import "./components/header";
 @import "./components/footer";
 
-// Add a beige/sand background color to the body
+/* Add a beige/sand background color to the body*/
 body{
     background-color: $base-color;
 
-    // Aligns children in column axis, and displays the footer on the bottom
+    /* Aligns children in column axis, and displays the footer on the bottom*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,7 +20,7 @@ body{
 }
 
 
-// Change size of logo
+/* Change size of logo*/
     .logo_image{
         width: 50px;
 }

@@ -1,6 +1,7 @@
 main {
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
+  color: #313e20;
 }
 main article {
   display: flex;
@@ -9,6 +10,9 @@ main article {
   justify-content: center;
   padding: 25px;
   padding-bottom: 30px;
+}
+main article section h3 {
+  color: black;
 }
 main article section img {
   width: 40%;
@@ -20,7 +24,7 @@ main article section img {
 main article section #blog5-button {
   font-family: "Bebas Neue", cursive;
   font-size: 1.8rem;
-  color: #283618;
+  color: black;
   background-color: #BC6C25;
   margin: 15px;
 }
@@ -29,11 +33,13 @@ main article section #blog5-button:hover {
   opacity: 0.8;
 }
 
+/* When width is 768px and under */
 @media screen and (max-width: 768px) {
   main article section img {
     width: 60%;
   }
 }
+/* When width is 480px and under */
 @media screen and (max-width: 480px) {
   main article section img {
     width: 75%;

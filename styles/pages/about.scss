@@ -4,6 +4,7 @@
 main{
     font-family: 'Bebas Neue', cursive; 
     font-size: 1.8rem;
+    color: $primary-color;
 
     article{
 
@@ -13,11 +14,15 @@ main{
             align-items: center;
             padding: 10px;
 
-            // Give margin to text in about page
+            /* Give margin to text in about page */
             .abouttext{
                 margin: 15px;
 
-                // Add icon to climbing list
+                .highlight{
+                    color: $secondary-color;
+                }
+
+                /* Add icon to climbing list */
                 .climbing_icon{
                     list-style: none;
                     padding: 5px 45px; 
@@ -27,7 +32,7 @@ main{
                     background-size: 30px;
                 }
                 
-                // Add icon to hiking list
+                /* Add icon to hiking list */
                 .hiking_icon{
                     list-style: none;
                     padding: 5px 45px; 
@@ -37,7 +42,7 @@ main{
                     background-size: 30px;
                 }
                 
-                // Add icon to camping list
+                /* Add icon to camping list */
                 .camping_icon{
                     list-style: none;
                     padding: 5px 45px; 
@@ -47,7 +52,7 @@ main{
                     background-size: 30px;
                 }
                 
-                // Add icon to riding list
+                /* Add icon to riding list */
                 .riding_icon{
                     list-style: none;
                     padding: 5px 45px; 
@@ -77,7 +82,7 @@ main{
     }
 }
     
-// When the width of screen is above 480px (mobile), make the image appear on the bottom
+/* When the width of screen is above 480px (mobile), make the image appear on the bottom */
 @media screen and (min-width: $mobile){
     main{
 
@@ -97,7 +102,7 @@ main{
     }
 }
 
-// When the screen is wider than 768px, make the section elements appear in a row format
+/* When the screen is wider than 768px, make the section elements appear in a row format */
 @media screen and (min-width: $tablet){
     main{
 
@@ -116,8 +121,8 @@ main{
     }
 }
 
-// When screen is larger than 1008 pixels, the image width will 
-// only be 30% of the section
+/* When screen is larger than 1008 pixels, the image width will 
+only be 30% of the section */
 @media screen and (min-width: 1008px){
     main{
         article{

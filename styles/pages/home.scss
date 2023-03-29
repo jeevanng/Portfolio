@@ -19,7 +19,7 @@
 
 $image-height: 16vh;
 
-// Create shape for photos to be held in and assign orientation to vertical and centre
+/* Create shape for photos to be held in and assign orientation to vertical and centre */
 .mountain{
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ $image-height: 16vh;
 
     img{
         object-fit: cover;
-        // Ensures image fills container fully when minimizing screen width
+        /* Ensures image fills container fully when minimizing screen width */
         height: 100%;
         width: 100%;
     }
@@ -54,8 +54,8 @@ $image-height: 16vh;
         height: 100px;
         background-color: black;
         clip-path: polygon(25% 0%, 75% 0%, 100% 95%, 0% 95%);
-        // Fixes the image and text link, makes the text take the width of 
-        // this triangle and not the whole screen
+        /* Fixes the image and text link, makes the text take the width of 
+         this triangle and not the whole screen */
         position: relative;
 
         .inner_triangle2{
@@ -136,7 +136,7 @@ $image-height: 16vh;
     }  
 }
 
-// Change the text and attributes in the home page 
+/* Change the text and attributes in the home page */
 .hometext{
     text-align: center;
     font-size: 2rem;
@@ -152,21 +152,21 @@ $image-height: 16vh;
     }
 }
 
-// When the screen is smaller than 480px, the top triangle will 
-// take up the whole screen. Using viewport to be responsive
-// across different mobile widths/heights.
+/* When the screen is smaller than 480px, the top triangle will 
+take up the whole screen. Using viewport to be responsive
+across different mobile widths/heights. */
 @media screen and (max-width: $mobile){
     .mountain{
 
         .triangle{
-            width: 75%;
-            // Height and margin to take up 100vh combined
-            // so on any mobile screen under 480px, the top
-            // of the mountain will take up the entire
-            // screen height
-            height: 30vh;
-            margin-top: 30vh;
-            margin-bottom: 40vh;
+            width: 70%;
+            /* Height and margin to take up 100vh combined
+            so on any mobile screen under 480px, the top
+            of the mountain will take up the entire
+            screen height */
+            height: 25vh;
+            margin-top: 27vh;
+            margin-bottom: 48vh;
         }
 
         // Change size of triangles and font size of text
@@ -229,7 +229,7 @@ $image-height: 16vh;
 }
 
 
-// When the screen is wider than 768px, make the triangle take up the whole viewport
+/* When the screen is wider than 768px, make the triangle take up the whole viewport */
 @media screen and (min-width: $tablet){
 
     // Change size of text in home page
@@ -266,8 +266,8 @@ $image-height: 16vh;
     }
 }
 
-// Animate the links/images to slightly zoom in on hover when 
-// screen is above width 768px
+/* Animate the links/images to slightly zoom in on hover when 
+screen is above width 768px */
 @media screen and (min-width: $tablet){
 
     .triangle_animate{
@@ -279,11 +279,11 @@ $image-height: 16vh;
     }
 }
 
-// Animate top triangle when width is under 768px
+/* Animate top triangle when width is under 768px */
 @media screen and (max-width: $tablet){
     .triangle{
         animation: rotation 2.5s;
-        // Keep animation in rotated position
+        /* Keep animation in rotated position */
         animation-fill-mode: forwards;
     }
 
