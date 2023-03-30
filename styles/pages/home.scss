@@ -267,8 +267,8 @@ across different mobile widths/heights. */
 }
 
 /* Animate the links/images to slightly zoom in on hover when 
-screen is above width 768px */
-@media screen and (min-width: $tablet){
+screen is above width 480px, as long as there is a mouse */
+@media screen and (min-width: $mobile){
 
     .triangle_animate{
         transition: transform 1s;

@@ -51,8 +51,8 @@ main article section .outer_image_border img {
     width: 100%;
   }
 }
-/* Animate images in blog page to zoom in */
-@media screen and (min-width: 768px) {
+/* Animate images in blog page to zoom in when larger than 480px width */
+@media screen and (min-width: 480px) {
   #image_animate {
     transition: transform 0.75s;
   }

@@ -1,6 +1,6 @@
 /* Add a beige/sand background color to the topnav*/
 header {
-  background-color: #f8f6e9;
+  background-color: #f4f2ea;
   font-family: "Bebas Neue", cursive;
   padding: 15px;
 }
@@ -27,7 +27,7 @@ header .topnav .fourlinks {
 }
 .topnav a:hover {
   background-color: #67753a;
-  color: #f8f6e9;
+  color: #f4f2ea;
 }
 .topnav .icon {
   display: none;
@@ -96,7 +96,7 @@ header .topnav .fourlinks {
 }
 /* Add a beige/sand background color to the footer */
 footer {
-  background-color: #f8f6e9;
+  background-color: #f4f2ea;
   text-align: center;
   font-family: "Secular One", sans-serif;
   /* Change font size of footer text */
@@ -159,7 +159,7 @@ When screen is smaller than 768px */
 }
 /* Add a beige/sand background color to the body*/
 body {
-  background-color: #f8f6e9;
+  background-color: #f4f2ea;
   /* Aligns children in column axis, and displays the footer on the bottom*/
   display: flex;
   flex-direction: column;

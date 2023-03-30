@@ -74,9 +74,9 @@ main{
     }
 }
 
-/* Animate images in blog page to zoom in */
+/* Animate images in blog page to zoom in when larger than 480px width */
 
-@media screen and (min-width: $tablet){
+@media screen and (min-width: $mobile){
 
     #image_animate{
         transition: transform 0.75s;
