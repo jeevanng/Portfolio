@@ -25,6 +25,9 @@ main article .resume #resume-button:hover {
 main article section {
   margin: 15px;
 }
+main article section .highlight_text {
+  color: #67753a;
+}
 main article section h2 {
   color: black;
 }

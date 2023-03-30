@@ -36,6 +36,10 @@ main{
         section{
             margin: 15px;
 
+            .highlight_text{
+                color: $secondary-color;
+            }
+
             h2{
                 color: black;
             }
