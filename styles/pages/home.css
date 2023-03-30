@@ -167,8 +167,8 @@ across different mobile widths/heights. */
     of the mountain will take up the entire
     screen height */
     height: 25vh;
-    margin-top: 27vh;
-    margin-bottom: 48vh;
+    margin-top: 20vh;
+    margin-bottom: 55vh;
   }
   .mountain .triangle2 {
     width: 35%;
